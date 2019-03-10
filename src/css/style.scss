@@ -65,7 +65,11 @@ $designWidth: 375;
 }
 
 // 画布代码
-
+/*
+ * 我叫 dogezhou
+ * 今天来画一个《一拳超人》中的主角琦玉老师，
+ * 首先添加画布
+ */
 .preview {
     height: 100%;
     display: flex;
@@ -75,6 +79,81 @@ $designWidth: 375;
     background: linear-gradient( #93DCE3 70%, #D9F0F2 100%);
 }
 
+/*
+ * 然后画出他的脸，一定要画出精确的弧度
+ */
 .face {
-    
+    position: relative;
+    width: 212px;
+    height: 308px;
+    background: #E2B5A0;
+    border: 3px solid #0C0807;
+    border-top-left-radius: 48% 42%;
+    border-top-right-radius: 48% 42%;
+    border-bottom-right-radius: 50% 54%;
+    border-bottom-left-radius: 50% 54%;
+}
+/*
+ *
+ */
+/*
+ * 然后是琦玉老师的眉毛
+ */
+.eyebrow {
+    position: absolute;
+    top: 126px;
+    width: 46px;
+    height: 4px;
+    border: 2px solid #0C0807;
+    border-bottom: 0;
+    border-top-left-radius: 50% 98%;
+    border-top-right-radius: 50% 98%;
+    &.left {
+        left: 36px;
+    }
+    &.right {
+        right: 36px;
+    }
+}
+
+/*
+ * 然后是琦玉老师的眼睛
+ */
+ .eye {
+    position: absolute;
+    top: 145px;
+    width: 50px;
+    height: 28px;
+    border: 2px solid #0C0807;
+    background: #EAE6E3;
+    border-top-left-radius: 70% 40%;
+    border-top-right-radius: 70% 40%;
+    border-bottom-right-radius: 60% 80%;
+    border-bottom-left-radius: 60% 80%;
+    /* 左眼放到左边 */
+    &.left {
+        left: 28px;
+    }
+    /* 右眼放到右边 */
+    &.right {
+        right: 28px;
+    }
+}
+
+/*
+ * 然后是琦玉老师的眼珠子
+ */
+.eyeball {
+    position: absolute;
+    top: 154px;
+    width: 4px;
+    height: 4px;
+    background: #0C0807;
+    border-radius: 50px;
+    &.left {
+        left: 56px;
+    }
+    &.right {
+        right: 56px;
+    }
 }

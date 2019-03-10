@@ -43,7 +43,7 @@
 
 /* 一个琦玉老师！谢谢观看！*/
     `
-    writeCss('', css)
+    // writeCss('', css)
 
     // 调速
     $('.actions').on('click', 'button', function(e) {
