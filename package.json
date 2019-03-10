@@ -1,0 +1,32 @@
+{
+  "name": "pikachu",
+  "version": "1.0.0",
+  "description": "css 画一个皮卡丘",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"node-sass --watch src/css/style.scss src/css/style.css \" \"start src/index.html\"",
+    "build": "echo \"no build\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dogezhou/pikachu.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dogezhou/pikachu/issues"
+  },
+  "homepage": "https://github.com/dogezhou/pikachu#readme",
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "gh-pages": "^2.0.1",
+    "node-sass": "^4.11.0"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
