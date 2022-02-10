@@ -24,7 +24,7 @@
   "devDependencies": {
     "concurrently": "^4.1.0",
     "gh-pages": "^2.0.1",
-    "node-sass": "^4.11.0"
+    "node-sass": "^7.0.0"
   },
   "dependencies": {
     "jquery": "^3.3.1"
